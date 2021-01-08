@@ -1,0 +1,54 @@
+.gridParent {
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 100px auto 100px;
+    grid-template-areas: "header" "main" "products" "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: stretch;
+}
+
+.products {
+    grid-area: products;
+    height: 800px;
+    background-color: hotpink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.product {
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
+    margin: 30px 5px 20px 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer {
+    grid-area: footer;
+}
